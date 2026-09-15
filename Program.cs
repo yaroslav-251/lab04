@@ -46,4 +46,64 @@ else
     Console.WriteLine("Пока нельзя");
 }
 
+int shislo = int.Parse(Console.ReadLine());
+if (shislo % 2 == 0)
+{
+    Console.WriteLine("Четное число");
+}
+else
+{
+    Console.WriteLine("Нечетное число");
+}
 
+int cifra1 = int.Parse(Console.ReadLine());
+int cifra2 = int.Parse(Console.ReadLine());
+int cifra3 = int.Parse(Console.ReadLine());
+if (cifra1 > cifra2 && cifra1 > cifra3)
+{
+    Console.WriteLine($"Наибольшее число {cifra1}");
+}
+else if (cifra2 > cifra1 && cifra2 > cifra3)
+{
+    Console.WriteLine($"Наибольшее число {cifra2}");
+}
+else
+{
+    Console.WriteLine($"Наибольшее число {cifra3}");
+}
+Console.WriteLine("Камень ножницы бумага");
+
+string c1 = Console.ReadLine();
+string c2 = Console.ReadLine();
+if (c1 == c2)
+{
+    Console.WriteLine("Ничья");
+}
+else if (c1 == "К" && c2 == "Н")
+{
+    Console.WriteLine("Победа игрок 1");
+}
+else if (c1 == "Н" && c2 == "Б")
+{
+    Console.WriteLine("Победа игрок 1");
+}
+else if (c1 == "Б" && c2 == "К")
+{
+    Console.WriteLine("Победа игрок 1");
+}
+else if (c1 == "Н" && c2 == "К")
+{
+    Console.WriteLine("Победа игрок 2");
+}
+else if (c1 == "Б" && c2 == "Н")
+{
+    Console.WriteLine("Победа игрок 2");
+}
+else if (c1 == "К" && c2 == "Б")
+{
+    Console.WriteLine("Победа игрок 2");
+}
+else
+{
+    Console.WriteLine("Ошибка ввода");
+}
