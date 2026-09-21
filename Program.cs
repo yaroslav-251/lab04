@@ -1,5 +1,5 @@
 ﻿int age = 15;
-if (age >= 18)
+if (age >= 21)
 {
     Console.WriteLine("Доступ разрешен");
 }
@@ -35,7 +35,7 @@ if (ages >= 14 && height >= 1.5)
 {
     Console.WriteLine("Можно кататься");
 }
-else if (razresh == true) 
+else if (razresh == true) && height <= 1.5 
 {
     Console.WriteLine("кататься можно");
 }
@@ -45,6 +45,20 @@ else
 {
     Console.WriteLine("Пока нельзя");
 }
+day = 1;
+switch (day) {
+    case 1:
+        dayName = "Понедельник";
+        break;
+    case 2:
+        dayName = "Вторник";
+        break;
+    default:
+        dayName = "Другой день";
+        break
+}
+
+string result = (number % 2 == 0) ? "четное" "нечетное";
 
 int shislo = int.Parse(Console.ReadLine());
 if (shislo % 2 == 0)
